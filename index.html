@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>IDDO</title>
+	<link rel="stylesheet" href="stylesheet/style-pop-up.css">
+	<link rel="stylesheet" href="stylesheet/style-index.css">
+	<link rel="icon" href="img/icons/me-icon2.ico">
+</head>
+<body>
+	<header class="header-hide">
+
+		<h1 class="logo">IDDO</h1>
+		
+		<nav class="navbar">
+			<a href="" class="navbar__id">Home</a>
+			<a href="" class="navbar__id">Services</a>
+			<a href="" class="navbar__id">Portfolio</a>
+			<a href="" class="navbar__id">About</a>
+			<a href="" class="navbar__id">Contact</a>
+		</nav>
+
+		<button type="button" class="button-sign-up">Sign up</button>
+
+	</header>
+	
+	<div class="content">
+		
+		<div class="home">
+			<div class="home__itro"></div>
+			<a href="#" class="play-button">
+				<svg class="play-button__svg" xmlns="http://www.w3.org/2000/svg" width="130px" height="130px" viewBox="0 0 130 130">
+					<g fill="#fff">
+						<path d="M65 0C47.047 0 30.797 7.273 19.035 19.035S0 47.047 0 65c0 17.953 7.273 34.203 19.035 45.965S47.047 130 65 130c17.953 0 34.203-7.273 45.965-19.035S130 82.953 130 65c0-17.953-7.273-34.203-19.035-45.965S82.953 0 65 0zm0 122.105c-15.785 0-30.023-6.343-40.395-16.71C14.395 95.023 7.895 80.785 7.895 65c0-15.785 6.343-30.023 16.71-40.395C34.977 14.238 49.215 7.895 65 7.895c15.785 0 30.023 6.343 40.395 16.71 10.367 10.372 16.71 24.61 16.71 40.395 0 15.785-6.5 30.023-16.71 40.395-10.372 10.367-24.61 16.71-40.395 16.71zm0 0"/>
+						<path d="M116.586 56.504c-.219-.215-.219-.215-.434-.434-.648-.648-1.3-1.082-2.168-1.515-3.203-1.84-28.847-16.57-32.054-18.41 0 0-.215 0-.215-.22L49.437 17.302c-2.812-1.735-6.062-1.95-9.093-1.301-3.035.867-5.633 2.816-7.367 5.633-.649.867-.864 1.949-1.301 2.816-.215.649-.215 1.516-.43 2.383v75.59c0 3.25 1.297 6.281 3.465 8.45 2.168 2.163 5.2 3.464 8.445 3.464 1.086 0 2.383-.215 3.469-.648 1.082-.434 2.164-.868 3.031-1.52 2.121-1.227 12.735-7.363 31.84-18.406l.434-.219 32.054-18.41c.22 0 .22-.219.438-.219 2.598-1.73 4.547-4.332 5.195-7.144.867-3.036.434-6.286-1.3-9.098-.43-.434-1.083-1.3-1.731-2.168zm-8.016 9.316h-.215l-31.84 18.625-.218.22c-19.102 11.042-29.715 17.183-31.84 18.41-.215 0-.215.214-.434.214 0 0-.214 0-.214.219h-.22c-.214 0-.433-.219-.648-.219-.214-.215-.214-.434-.214-.648V27.48c.214-.22.43-.434.648-.434h.648c2.141 1.226 12.825 7.363 32.059 18.41l.215.219L108.57 64.3l.434.433v.653c0 .215-.215.433-.434.433zm0 0"/>
+					</g>
+				</svg>
+			</a>
+			<div class="home__text">
+				<span class="home__text-video-1">Let me show you a few things.</span>
+				<span class="home__text-video-2 js-open-modal" data-modal="1">Click to play video.</span>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="services">
+		
+		<div class="services__title title">
+			<span class="services__span"></span>
+			<span class="services__span"></span>
+		</div>
+
+	</div>
+
+	<!-- PopUp -->
+		<div class="modal" data-modal="1">
+			<!-- svg for closing the modal window -->
+			<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
+			</svg>
+			<p class="modal__title">Заголовок окна 1</p>
+		</div>
+
+		<!-- Подложка под модальным окном -->
+		<div class="overlay js-overlay-modal"></div>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+	<script src="js/scripts.js"></script>
+	<script src="js/pop-up-script.js"></script>	
+</body>
+</html>
