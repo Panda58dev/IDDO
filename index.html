@@ -5,6 +5,7 @@
 	<title>IDDO</title>
 	<link rel="stylesheet" href="stylesheet/style-pop-up.css">
 	<link rel="stylesheet" href="stylesheet/style-index.css">
+	<link rel="stylesheet" href="fonts/Fontawesome/css/font-awesome.min.css">
 	<link rel="icon" href="img/icons/me-icon2.ico">
 </head>
 <body>
@@ -13,11 +14,11 @@
 		<h1 class="logo">IDDO</h1>
 		
 		<nav class="navbar">
-			<a href="" class="navbar__id">Home</a>
-			<a href="" class="navbar__id">Services</a>
-			<a href="" class="navbar__id">Portfolio</a>
-			<a href="" class="navbar__id">About</a>
-			<a href="" class="navbar__id">Contact</a>
+			<a href="#1" class="navbar__id">Home</a>
+			<a href="#2" class="navbar__id">Services</a>
+			<a href="#3" class="navbar__id">Portfolio</a>
+			<a href="#4" class="navbar__id">About</a>
+			<a href="#5" class="navbar__id">Contact</a>
 		</nav>
 
 		<button type="button" class="button-sign-up">Sign up</button>
@@ -25,8 +26,7 @@
 	</header>
 	
 	<div class="content">
-		
-		<div class="home">
+		<div id="1" class="home">
 			<div class="home__itro"></div>
 			<a href="#" class="play-button">
 				<svg class="play-button__svg" xmlns="http://www.w3.org/2000/svg" width="130px" height="130px" viewBox="0 0 130 130">
@@ -42,17 +42,103 @@
 			</div>
 		</div>
 
-	</div>
+		<div id="2" class="services">			
+			<div class="services__big">
+				<div class="title">
+					<span>OUR SERVICES.</span>
+					<hr class="services__hr"size="10px" width="370" color="#fff" align="left">
+				</div>
+				<div class="services__components">
+					
+					<div class="services__block">
+						<i class="fa fa-cloud services__fa"></i>
+						<div class="services__description">
+							<p class="services__title">Feature 1</p>
+							<span class="services__desc-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span>
+						</div>
+					</div>
+					<div class="services__block">
+						<i class="fa fa-cutlery services__fa"></i>
+						<div class="services__description">
+							<p class="services__title">Feature 2</p>
+							<span class="services__desc-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span>
+						</div>
+					</div>
+					<div class="services__block">
+						<i class="fa fa-bolt services__fa"></i>
+						<div class="services__description">
+							<p class="services__title">Feature 3</p>
+							<span class="services__desc-base">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
+						</div>
+					</div>
+					<div class="services__block">
+						<i class="fa fa-legal services__fa"></i>
+						<div class="services__description">
+							<p class="services__title">Feature 4</p>
+							<span class="services__desc-base">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
+						</div>
+					</div>
 
-	<div class="services">
-		
-		<div class="services__title title">
-			<span class="services__span"></span>
-			<span class="services__span"></span>
+				</div>
+			</div>
+
+			<div class="services__small">
+				<i class="fa fa-lightbulb-o"></i>
+				<i class="fa fa-globe"></i>
+				<i class="fa fa-camera-retro"></i>
+				<i class="fa fa-wrench"></i>
+				<i class="fa fa-microphone"></i>
+				<i class="fa fa-money"></i>
+			</div>			
+		</div>
+
+		<div id="3" class="portfolio">
+			<div class="title">
+				<span class="portfolio__title">OUR WORKS.</span>
+				<hr class="portfolio__hr"size="10px" width="370" color="#363636" align="left">
+			</div>
+
+			<div class="portfolio__filter">
+				<button class="portfolio__filter-button portfolio__filter-button-action" type="button">All</button>
+				<button class="portfolio__filter-button" type="button">Website</button>
+				<button class="portfolio__filter-button" type="button">Branding</button>
+			</div>
+
+			<div class="portfolio__ports">
+				<div class="portfolio__port">
+					<div class="portfolio__port-hover">
+						<p class="port__title">NAME PREJECT</p><span class="port__date">designed by Authour | May 23, 2014</span>
+					</div>
+				</div>
+				<div class="portfolio__port">
+					<div class="portfolio__port-hover">
+						<p class="port__title">NAME PREJECT</p><span class="port__date">designed by Authour | May 23, 2014</span>
+					</div>
+				</div>
+				<div class="portfolio__port">
+					<div class="portfolio__port-hover">
+						<p class="port__title">NAME PREJECT</p><span class="port__date">designed by Authour | May 23, 2014</span>
+					</div>
+				</div>
+				<div class="portfolio__port">
+					<div class="portfolio__port-hover">
+						<p class="port__title">NAME PREJECT</p><span class="port__date">designed by Authour | May 23, 2014</span>
+					</div>
+				</div>
+				<div class="portfolio__port">
+					<div class="portfolio__port-hover">
+						<p class="port__title">NAME PREJECT</p><span class="port__date">designed by Authour | May 23, 2014</span>
+					</div>
+				</div>
+				<div class="portfolio__port">
+					<div class="portfolio__port-hover">
+						<p class="port__title">NAME PREJECT</p><span class="port__date">designed by Authour | May 23, 2014</span>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</div>
-
 	<!-- PopUp -->
 		<div class="modal" data-modal="1">
 			<!-- svg for closing the modal window -->
@@ -64,6 +150,11 @@
 
 		<!-- Подложка под модальным окном -->
 		<div class="overlay js-overlay-modal"></div>
+
+
+
+
+
 
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 

@@ -28,7 +28,7 @@
 }
 
 @font-face {
-	font-family: title-font;
+	font-family: PN-bold;
 	src: url('../fonts/ProximaNova-Bold/ProximaNova-Bold.eot');
 	src: url('../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix') format('eot'),
 	url('../fonts/ProximaNova-Bold/ProximaNova-Bold.woff') format('woff'),
@@ -39,10 +39,10 @@
 
 @font-face {
 	font-family: PN-thin;
-	src: url('../fonts/ProximaNova-Thin/ProximaNovaCond-Thin.eot');
-	src: url('../fonts/ProximaNova-Thin/ProximaNovaCond-Thin.eot?#iefix') format('eot'),
-	url('../fonts/ProximaNova-Thin/ProximaNovaCond-Thin.woff') format('woff'),
-	url('../fonts/ProximaNova-Thin/ProximaNovaCond-Thin.ttf') format('truetype');
+	src: url('../fonts/ProximaNova-Thin/ProximaNovaT-Thin.eot');
+	src: url('../fonts/ProximaNova-Thin/ProximaNovaT-Thin.eot?#iefix') format('eot'),
+	url('../fonts/ProximaNova-Thin/ProximaNovaT-Thin.woff') format('woff'),
+	url('../fonts/ProximaNova-Thin/ProximaNovaT-Thin.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -65,7 +65,7 @@ body {
 }
 	.logo {
 		color: #ffffff;
-		font-family: title-font;
+		font-family: PN-bold;
 		font-size: 30px;
 	}
 
@@ -126,6 +126,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-top: 80px;
 }
 	.play-button {
 		margin-right: 40px;
@@ -153,6 +154,190 @@ body {
 			cursor: pointer;
 		}
 
+.services {
+	width: 100%;
+	height: 510px;
+	display: flex;
+	flex-direction: column;
+}
+	.services__big {
+		height: 360px;
+		background-color: #42b8dd;
+		display: flex;
+		justify-content: space-between;
+	}
 
+		.title {
+			width: 353px;
+			height: 120px;
+			margin-left: 215px;
+			margin-top: 33px;
+			/*border-bottom: solid #fff 10px;*/
+			color: #fff;
+			font-family: PN-bold;
+			font-size: 72px;
+			line-height: 60px;
+		}
+		
+			hr {
+				border-radius: 0px;
+				margin: 0px;
+			}
 
+		.services__components {
+			width: 770px;
+			height: 265.78px;
+			margin-top: 50px;
+			margin-right: 210px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 
+			.services__block {
+				width: 370px;
+				height: 103.79px;
+				display: flex;
+				justify-content: space-around;
+			}
+
+				.services__fa { 
+					padding: 33px 31px 31px;
+					border: #fff solid 2px;
+					border-radius: 50%;
+					font-size: 36px !important;
+				}
+
+				.services__fa::before {
+					color: #fff;					
+				}
+
+				.fa-cutlery {
+					padding: 32px 36px;
+				}
+
+				.fa-bolt {
+					padding: 31px 41px 33px;
+				}
+
+				.fa-legal {
+					padding: 32px 33px 32px 31px;
+				}
+
+				.services__description {
+					width: 240px;
+					height: 100px;
+					color: #fff;
+					line-height: 30px;
+				}
+
+					.services__title {
+						font-family: PN-bold;
+						font-size: 16px;
+						margin: 0px;
+					}
+
+					.services__desc-base {
+						font-family: PN-thin;
+						font-size: 14px;
+					}
+
+	.services__small {
+		height: 150px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		font-size: 36px;
+		color: #42B8DD;
+	}
+
+.portfolio {
+	width: 100%;
+	height: 1325px;
+	background-color: #EBEBEB;
+	display: flex;
+	flex-direction: column;
+}
+
+	.portfolio__title {
+		color: #363636;
+	}
+
+	.portfolio__filter {
+		width: 290px;
+		height: 35px;
+		margin-left: 215px;
+		margin-top: 29.2px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+		.portfolio__filter-button {
+			width: 90px;
+			border: solid #42b8dd 2px;
+			border-radius: 10px;
+			color: #42b8dd;
+			font-family: PN-reg;
+			font-size: 16px;
+			transition: 0.2s;
+		}
+
+		.portfolio__filter-button:hover {
+			color: #fff;
+			background-color: #42b8dd;	
+			cursor: pointer;
+		}
+
+		.portfolio__filter-button-action {
+			color: #fff !important;
+			background-color: #42b8dd;
+		}
+
+	.portfolio__ports {
+		height: 770px;
+		width: 1170px;
+		margin-left: 215px;
+		margin-top: 60px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-content: space-between; 
+	}
+
+		.portfolio__port {
+			width: 370px;
+			height: 370px;
+			background-color: #CCCCCC;
+			display: flex;
+			align-items: flex-end;
+			overflow: hidden;
+		}
+
+		.portfolio__port:hover .portfolio__port-hover {
+			margin-bottom: 0px;
+			cursor: pointer;
+		}
+
+			.portfolio__port-hover {
+				height: 100px;
+				width: 100%;
+				background-color: #fff;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: -100px;
+				transition: 0.2s;
+			}
+
+				.port__title {
+					color: #42B8DD;
+					font-family: PN-bold;
+					font-size: 18px;
+				}
+
+				.port__date {
+					color: #898989;
+					font-family: PN-thin;
+					font-size: 14px;
+				}
